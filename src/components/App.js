@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import Name  from '././Name';
+import Name  from './Name';
 import Profile  from './Profile';
 import Objective  from './Objective';
 import PersonalSkill  from './PersonalSkill';
