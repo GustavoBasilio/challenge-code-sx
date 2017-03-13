@@ -1,0 +1,58 @@
+#personal-skill, #professional-skill{
+    p{
+        margin:2px 0px;
+        font-family: Lato;
+        text-transform: uppercase;
+        font-size: 14px;
+        width:100%;
+        float: left;
+        label{
+            width:50%;
+            float:left;
+        }
+        progress {
+            width:50%;
+            float:right;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-progress-appearance: none;
+            margin: 3px 0px;
+            height: 10px;
+            border:none;
+        }
+    }
+}
+
+#personal-skill{
+    ::-webkit-progress-bar {
+        background-color: $white;
+    }
+    ::-webkit-progress-value {
+        background-color: $light-gray;
+    }
+    progress{
+        &::-moz-progress-bar {
+            background-color: $light-gray;
+        }
+        &::-moz-progress-value {
+            background-color: $white;
+        }
+    }
+}
+
+#professional-skill{
+    ::-webkit-progress-bar {
+        background-color: $light-gray;
+    }
+    ::-webkit-progress-value {
+        background-color: $light-green;
+    }
+    progress{
+        &::-moz-progress-bar {
+            background-color: $light-green;
+        }
+        &::-moz-progress-value {
+            background-color: $light-gray;
+        }
+    }
+}
